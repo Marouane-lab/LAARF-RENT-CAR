@@ -2,21 +2,79 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>LAARF RENT CAR</title>
-</head>
 
-<body style="background:black;color:white;text-align:center;font-family:Arial;">
+<style>
+body {
+    margin:0;
+    font-family: Arial;
+    background:black;
+    color:white;
+    text-align:center;
+}
 
-<h1 style="color:gold;">LAARF RENT CAR</h1>
-<p>📍 Marrakech| 📞 0664781956</p>
+header {
+    padding:20px;
+    border-bottom:2px solid gold;
+}
 
-<h2>Nos véhicules</h2>
+h1 {color:gold;}
 
-<div>
-<h3>Porsche Macan</h3>
-<p>1200 DH / jour</p>
-<button onclick="reserver('Porsche Macan',1200)">Réserver</button>
-</div>
+.hero {
+    background:url('https://images.unsplash.com/photo-1502877338535-766e1452684a') center/cover;
+    height:250px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero h2 {
+    background:rgba(0,0,0,0.7);
+    padding:10px;
+    color:gold;
+}
+
+.cars {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+.car {
+    background:#111;
+    margin:10px;
+    padding:10px;
+    border-radius:10px;
+    width:250px;
+}
+
+.car img {
+    width:100%;
+    border-radius:10px;
+}
+
+.btn {
+    background:gold;
+    color:black;
+    padding:10px;
+    display:block;
+    margin-top:10px;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.whatsapp {
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px;
+    border-radius:50%;
+    font-size:20px;
+}
+</style>
 
 <script>
 function reserver(voiture, prix){
@@ -30,6 +88,46 @@ let msg = Bonjour je veux réserver ${voiture} Nom:${nom} Tel:${tel} Jours:${jou
 window.open("https://wa.me/212664781956?text="+msg);
 }
 </script>
+
+</head>
+
+<body>
+
+<header>
+<h1>LAARF RENT CAR</h1>
+<p>📍 Marrakech | 📞 0664781956</p>
+</header>
+
+<div class="hero">
+<h2>Location voitures luxe</h2>
+</div>
+
+<div class="cars">
+
+<div class="car">
+<img src="https://images.unsplash.com/photo-1552519507-da3b142c6e3d">
+<h3>Porsche Macan</h3>
+<p>1200 DH</p>
+<a class="btn" onclick="reserver('Porsche',1200)">Réserver</a>
+</div>
+
+<div class="car">
+<img src="https://images.unsplash.com/photo-1549924231-f129b911e442">
+<h3>Audi A3</h3>
+<p>850 DH</p>
+<a class="btn" onclick="reserver('Audi',850)">Réserver</a>
+</div>
+
+<div class="car">
+<img src="https://images.unsplash.com/photo-1553440569-bcc63803a83d">
+<h3>Golf 8</h3>
+<p>750 DH</p>
+<a class="btn" onclick="reserver('Golf',750)">Réserver</a>
+</div>
+
+</div>
+
+<a class="whatsapp" href="https://wa.me/212664781956">💬</a>
 
 </body>
 </html>
