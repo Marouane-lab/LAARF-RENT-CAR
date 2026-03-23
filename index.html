@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>LAARF RENT CAR</title>
+</head>
+
+<body style="background:black;color:white;text-align:center;font-family:Arial;">
+
+<h1 style="color:gold;">LAARF RENT CAR</h1>
+<p>📍 Marrakech| 📞 0664781956</p>
+
+<h2>Nos véhicules</h2>
+
+<div>
+<h3>Porsche Macan</h3>
+<p>1200 DH / jour</p>
+<button onclick="reserver('Porsche Macan',1200)">Réserver</button>
+</div>
+
+<script>
+function reserver(voiture, prix){
+let nom = prompt("Votre nom:");
+let tel = prompt("Téléphone:");
+let jours = prompt("Nombre de jours:");
+let total = prix * jours;
+
+let msg = Bonjour je veux réserver ${voiture} Nom:${nom} Tel:${tel} Jours:${jours} Total:${total}DH;
+
+window.open("https://wa.me/212664781956?text="+msg);
+}
+</script>
+
+</body>
+</html>
