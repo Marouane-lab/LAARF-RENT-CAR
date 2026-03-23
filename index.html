@@ -1,819 +1,51 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <title>AOL LUXURY RENT CAR | LAARF RENT CAR</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            background-color: #111;
-            color: white;
-        }
-        header {
-            background: black;
-            padding: 20px;
-            text-align: center;
-        }
-        header h1 {
-            color: gold;
-        }
-        nav {
-            text-align: center;
-            padding: 10px;
-            background: #222;
-        }
-        nav a {
-            color: white;
-            margin: 10px;
-            text-decoration: none;
-        }
-        .section {
-            padding: 40px;
-            text-align: center;
-        }
-        .cars {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-        }
-        .car {
-            background: #222;
-            margin: 15px;
-            padding: 15px;
-            border-radius: 10px;
-            width: 250px;
-        }
-        .car img {
-            width: 100%;
-            border-radius: 10px;
-        }
-        .btn {
-            display: inline-block;
-            padding: 10px 20px;
-            background: gold;
-            color: black;
-            margin-top: 10px;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        footer {
-            background: black;
-            text-align: center;
-            padding: 20px;
-            margin-top: 30px;
-        }
-    </style>
-</head>
-
-<body>
-
-<header>
-    <h1>AOL LUXURY RENT CAR</h1>
-    <h2>LAARF RENT CAR</h2>
-    <p>Location de voitures de luxe au Maroc</p>
-</header>
-
-<nav>
-    <a href="#">Accueil</a>
-    <a href="#">Voitures</a>
-    <a href="#">Contact</a>
-</nav>
-
-<div class="section">
-    <h2>Nos Véhicules</h2>
-
-    <div class="cars">
-
-        <div class="car">
-            <img src="https://via.placeholder.com/250x150" alt="Clio 5">
-            <h3>Renault Clio 5</h3>
-            <p>Prix: 350 - 400 DH / jour</p>
-            <a class="btn" href="https://wa.me/212600000000">Réserver</a>
-        </div>
-
-        <div class="car">
-            <img src="https://via.placeholder.com/250x150" alt="Mercedes C">
-            <h3>Mercedes Classe C</h3>
-            <p>Prix: Sur demande</p>
-            <a class="btn" href="https://wa.me/212600000000">Réserver</a>
-        </div>
-
-        <div class="car">
-            <img src="https://via.placeholder.com/250x150" alt="Jeep">
-            <h3>Jeep Grand Cherokee</h3>
-            <p>Prix: 500 - 700 DH / jour</p>
-            <a class="btn" href="https://wa.me/212600000000">Réserver</a>
-        </div>
-
-        <div class="car">
-            <img src="https://via.placeholder.com/250x150" alt="Porsche">
-            <h3>Porsche Macan</h3>
-            <p>Prix: Luxe</p>
-            <a class="btn" href="https://wa.me/212600000000">Réserver</a>
-        </div>
-
-        <div class="car">
-            <img src="https://via.placeholder.com/250x150" alt="Cupra">
-            <h3>Cupra Leon</h3>
-            <p>Prix: Sur demande</p>
-            <a class="btn" href="https://wa.me/212600000000">Réserver</a>
-        </div>
-
-        <div class="car">
-            <img src="https://via.placeholder.com/250x150" alt="XADV">
-            <h3>Honda X-ADV</h3>
-            <p>Prix: Sur demande</p>
-            <a class="btn" href="https://wa.me/212600000000">Réserver</a>
-        </div>
-
-    </div>
-</div>
-
-<div class="section">
-    <h2>Réservation rapide</h2>
-    <p>Contactez-nous directement sur WhatsApp</p>
-    <a class="btn" href="https://wa.me/212600000000">📱 Réserver maintenant</a>
-</div>
-
-<footer>
-    <p>© 2026 AOL LUXURY RENT CAR | LAARF RENT CAR</p>
-</footer>
-
-</body>
-</html>
-<div class="cars">
-
-<div class="car">
-<img src="images/porsche-macan.jpg">
-<h3>Porsche Macan</h3>
-<p>1200 DH / jour</p>
-<a class="btn" onclick="reserver('Porsche Macan',1200)">Réserver</a>
-</div>
-
-<div class="car">
-<img src="images/range-rover-evoque.jpg">
-<h3>Range Rover Evoque</h3>
-<p>1100 DH / jour</p>
-<a class="btn" onclick="reserver('Range Rover Evoque',1100)">Réserver</a>
-</div>
-
-<div class="car">
-<img src="images/touareg.jpg">
-<h3>Volkswagen Touareg</h3>
-<p>900 DH / jour</p>
-<a class="btn" onclick="reserver('Touareg',900)">Réserver</a>
-</div>
-
-<div class="car">
-<img src="images/troc.jpg">
-<h3>Volkswagen T-Roc</h3>
-<p>700 DH / jour</p>
-<a class="btn" onclick="reserver('T-Roc',700)">Réserver</a>
-</div>
-
-<div class="car">
-<img src="images/audi-a3.jpg">
-<h3>Audi A3</h3>
-<p>850 DH / jour</p>
-<a class="btn" onclick="reserver('Audi A3',850)">Réserver</a>
-</div>
-
-<div class="car">
-<img src="images/golf8.jpg">
-<h3>Golf 8</h3>
-<p>750 DH / jour</p>
-<a class="btn" onclick="reserver('Golf 8',750)">Réserver</a>
-</div>
-
-<div class="car">
-<img src="images/clio5.jpg">
-<h3>Renault Clio 5</h3>
-<p>350 DH / jour</p>
-<a class="btn" onclick="reserver('Clio 5',350)">Réserver</a>
-</div>
-images/porsche-macan.jpg
-images/audi-a3.jpg
-images/golf8.jpg
-images/clio5.jpg
-images/range-rover-evoque.jpg
-images/touareg.jpg
-images/troc.jpg
-<!DOCTYPE html>
-<html lang="fr">
-<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LAARF RENT CAR</title>
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background: #050505;
-      color: white;
-      line-height: 1.5;
-    }
-
-    header {
-      background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.85)),
-        url('images/cover.jpg') center/cover no-repeat;
-      min-height: 80vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 20px;
-      border-bottom: 2px solid #d4af37;
-    }
-
-    .hero-box {
-      background: rgba(0, 0, 0, 0.45);
-      padding: 30px 20px;
-      border: 1px solid rgba(212, 175, 55, 0.4);
-      border-radius: 18px;
-      max-width: 700px;
-      width: 100%;
-    }
-
-    .logo-mark {
-      font-size: 42px;
-      margin-bottom: 10px;
-    }
-
-    .brand {
-      font-size: 40px;
-      font-weight: 800;
-      color: #d4af37;
-      letter-spacing: 1px;
-      margin-bottom: 10px;
-    }
-
-    .subtitle {
-      font-size: 18px;
-      color: #f5f5f5;
-      margin-bottom: 20px;
-    }
-
-    .contact-top {
-      font-size: 16px;
-      color: #ddd;
-      margin-bottom: 25px;
-    }
-
-    .hero-btn {
-      display: inline-block;
-      background: #d4af37;
-      color: #000;
-      text-decoration: none;
-      padding: 12px 22px;
-      border-radius: 8px;
-      font-weight: 700;
-    }
-
-    nav {
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      background: #0a0a0a;
-      border-bottom: 1px solid rgba(212, 175, 55, 0.25);
-      text-align: center;
-      padding: 14px 10px;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 14px;
-      font-weight: 600;
-      font-size: 15px;
-    }
-
-    nav a:hover {
-      color: #d4af37;
-    }
-
-    section {
-      padding: 50px 16px;
-    }
-
-    .section-title {
-      text-align: center;
-      font-size: 32px;
-      color: #d4af37;
-      margin-bottom: 12px;
-    }
-
-    .section-text {
-      text-align: center;
-      color: #ccc;
-      margin-bottom: 30px;
-    }
-
-    .cars {
-      max-width: 1200px;
-      margin: auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
-    }
-
-    .car {
-      background: #0d0d0d;
-      border: 1px solid rgba(255,255,255,0.05);
-      border-radius: 16px;
-      overflow: hidden;
-      box-shadow: 0 10px 24px rgba(0,0,0,0.25);
-      transition: transform 0.25s ease;
-    }
-
-    .car:hover {
-      transform: translateY(-4px);
-    }
-
-    .car img {
-      width: 100%;
-      height: 190px;
-      object-fit: cover;
-      display: block;
-      background: #111;
-    }
-
-    .car-content {
-      padding: 16px;
-      text-align: center;
-    }
-
-    .car h3 {
-      font-size: 22px;
-      margin-bottom: 12px;
-      color: #fff;
-    }
-
-    .btn {
-      display: inline-block;
-      background: #d4af37;
-      color: #000;
-      text-decoration: none;
-      padding: 10px 18px;
-      border-radius: 8px;
-      font-weight: 700;
-      cursor: pointer;
-      border: none;
-    }
-
-    .about,
-    .contact-box {
-      max-width: 900px;
-      margin: auto;
-      background: #0c0c0c;
-      border: 1px solid rgba(212, 175, 55, 0.15);
-      border-radius: 18px;
-      padding: 28px 20px;
-      text-align: center;
-    }
-
-    .contact-box p,
-    .about p {
-      color: #d6d6d6;
-      margin-bottom: 12px;
-    }
-
-    .map-wrap {
-      max-width: 1100px;
-      margin: 30px auto 0;
-      overflow: hidden;
-      border-radius: 16px;
-      border: 1px solid rgba(212, 175, 55, 0.2);
-    }
-
-    .map-wrap iframe {
-      width: 100%;
-      height: 300px;
-      border: 0;
-      display: block;
-    }
-
-    .whatsapp {
-      position: fixed;
-      right: 18px;
-      bottom: 18px;
-      width: 58px;
-      height: 58px;
-      border-radius: 50%;
-      background: #25D366;
-      color: white;
-      font-size: 28px;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 8px 18px rgba(0,0,0,0.35);
-    }
-
-    footer {
-      text-align: center;
-      padding: 24px 16px;
-      color: #aaa;
-      border-top: 1px solid rgba(212,175,55,0.12);
-      margin-top: 30px;
-    }
-
-    @media (max-width: 600px) {
-      .brand {
-        font-size: 30px;
-      }
-
-      .subtitle {
-        font-size: 16px;
-      }
-
-      .logo-mark {
-        font-size: 34px;
-      }
-    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Arial,sans-serif;background:#070707;color:#fff;line-height:1.5}
+    nav{background:#0d0d0d;border-bottom:1px solid rgba(212,175,55,.25);text-align:center;padding:14px 10px;position:sticky;top:0;z-index:1000}
+    nav a{color:#fff;text-decoration:none;margin:0 14px;font-weight:600;font-size:15px}
+    header{background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.78)),url("images/cover.jpg") center/cover no-repeat;min-height:72vh;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;border-bottom:2px solid #d4af37}
+    .hero-box{max-width:760px;width:100%;background:rgba(0,0,0,.45);border:1px solid rgba(212,175,55,.35);border-radius:18px;padding:28px 20px}
+    .brand{font-size:40px;font-weight:800;color:#d4af37;margin-bottom:8px;letter-spacing:1px}
+    .subtitle{color:#eee;font-size:18px;margin-bottom:14px}
+    .top-contact{color:#ddd;margin-bottom:20px;font-size:16px}
+    .btn-main,.btn{display:inline-block;background:#d4af37;color:#000;text-decoration:none;padding:12px 22px;border-radius:8px;font-weight:bold;border:none;cursor:pointer}
+    section{padding:50px 16px}
+    .section-title{text-align:center;color:#d4af37;font-size:32px;margin-bottom:10px}
+    .section-text{text-align:center;color:#cfcfcf;margin-bottom:30px}
+    .cars{max-width:1200px;margin:auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:20px}
+    .car{background:#111;border:1px solid rgba(255,255,255,.05);border-radius:16px;overflow:hidden;box-shadow:0 10px 22px rgba(0,0,0,.28)}
+    .car img{width:100%;height:200px;object-fit:cover;display:block;background:#1a1a1a}
+    .car-content{padding:16px;text-align:center}
+    .car h3{font-size:22px;margin-bottom:14px}
+    .about,.contact-box{max-width:950px;margin:auto;background:#0c0c0c;border:1px solid rgba(212,175,55,.18);border-radius:18px;padding:28px 20px;text-align:center}
+    .about p,.contact-box p{color:#d6d6d6;margin-bottom:12px}
+    .map-wrap{max-width:1100px;margin:30px auto 0;border-radius:16px;overflow:hidden;border:1px solid rgba(212,175,55,.18)}
+    .map-wrap iframe{width:100%;height:300px;border:0;display:block}
+    .whatsapp{position:fixed;right:18px;bottom:18px;width:58px;height:58px;border-radius:50%;background:#25D366;color:#fff;text-decoration:none;display:flex;align-items:center;justify-content:center;font-size:28px;box-shadow:0 8px 18px rgba(0,0,0,.35);z-index:2000}
+    footer{text-align:center;color:#aaa;padding:24px 16px;border-top:1px solid rgba(212,175,55,.12);margin-top:30px}
   </style>
-
   <script>
-    function reserver(voiture) {
-      const message = "Bonjour, je veux réserver : " + voiture;
-      window.open("https://wa.me/212664781956?text=" + encodeURIComponent(message), "_blank");
+    function reserver(voiture){
+      const message="Bonjour, je veux réserver : "+voiture;
+      window.open("https://wa.me/212664781956?text="+encodeURIComponent(message),"_blank");
     }
   </script>
 </head>
 <body>
-
   <nav>
     <a href="#accueil">Accueil</a>
     <a href="#vehicules">Véhicules</a>
-    <a href="#apropos">À propos</a>
     <a href="#contact">Contact</a>
   </nav>
 
   <header id="accueil">
     <div class="hero-box">
-      <div class="logo-mark">🚘</div>
-      <div class="brand">LAARF RENT CAR</div>
-      <div class="subtitle">Location de véhicules premium au Maroc</div>
-      <div class="contact-top">📍 Marrakech • 📞 0664781956</div>
-      <a class="hero-btn" href="https://wa.me/212664781956">Réserver sur WhatsApp</a>
-    </div>
-  </header>
-
-  <section id="vehicules">
-    <h2 class="section-title">Nos Véhicules</h2>
-    <p class="section-text">Photos réelles de votre flotte</p>
-
-    <div class="cars">
-      <div class="car">
-        <img src="images/porsche-macan.jpg" alt="Porsche Macan">
-        <div class="car-content">
-          <h3>Porsche Macan</h3>
-          <button class="btn" onclick="reserver('Porsche Macan')">Réserver</button>
-        </div>
-      </div>
-
-      <div class="car">
-        <img src="images/range-rover-evoque.jpg" alt="Range Rover Evoque">
-        <div class="car-content">
-          <h3>Range Rover Evoque</h3>
-          <button class="btn" onclick="reserver('Range Rover Evoque')">Réserver</button>
-        </div>
-      </div>
-
-      <div class="car">
-        <img src="images/touareg.jpg" alt="Volkswagen Touareg">
-        <div class="car-content">
-          <h3>Volkswagen Touareg</h3>
-          <button class="btn" onclick="reserver('Volkswagen Touareg')">Réserver</button>
-        </div>
-      </div>
-
-      <div class="car">
-        <img src="images/troc.jpg" alt="Volkswagen T-Roc">
-        <div class="car-content">
-          <h3>Volkswagen T-Roc</h3>
-          <button class="btn" onclick="reserver('Volkswagen T-Roc')">Réserver</button>
-        </div>
-      </div>
-
-      <div class="car">
-        <img src="images/audi-a3.jpg" alt="Audi A3">
-        <div class="car-content">
-          <h3>Audi A3</h3>
-          <button class="btn" onclick="reserver('Audi A3')">Réserver</button>
-        </div>
-      </div>
-
-      <div class="car">
-        <img src="images/golf8.jpg" alt="Golf 8">
-        <div class="car-content">
-          <h3>Golf 8</h3>
-          <button class="btn" onclick="reserver('Golf 8')">Réserver</button>
-        </div>
-      </div>
-
-      <div class="car">
-        <img src="images/clio5.jpg" alt="Renault Clio 5">
-        <div class="car-content">
-          <h3>Renault Clio 5</h3>
-          <button class="btn" onclick="reserver('Renault Clio 5')">Réserver</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="apropos">
-    <div class="about">
-      <h2 class="section-title">LAARF RENT CAR</h2>
-      <p>Service de location de véhicules fiable, rapide et professionnel.</p>
-      <p>Réservation directe par WhatsApp et accompagnement personnalisé.</p>
-    </div>
-  </section>
-
-  <section id="contact">
-    <div class="contact-box">
-      <h2 class="section-title">Contact</h2>
-      <p>📞 Téléphone : 0664781956</p>
-      <p>📍 Ville : Marrakech</p>
-      <p>Disponible pour vos réservations sur WhatsApp.</p>
-      <a class="btn" href="https://wa.me/212664781956">Contacter maintenant</a>
-    </div>
-
-    <div class="map-wrap">
-      <iframe src="https://maps.google.com/maps?q=Marrakech&t=&z=12&ie=UTF8&iwloc=&output=embed"></iframe>
-    </div>
-  </section>
-
-  <a class="whatsapp" href="https://wa.me/212664781956" title="WhatsApp">💬</a>
-
-  <footer>
-    © 2026 LAARF RENT CAR - Tous droits réservés
-  </footer>
-
-</body>
-</html>
-images/cover.jpg
-images/porsche-macan.jpg
-images/range-rover-evoque.jpg
-images/touareg.jpg
-images/troc.jpg
-images/audi-a3.jpg
-images/golf8.jpg
-images/clio5.jpg
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>LAARF RENT CAR</title>
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: Arial, sans-serif;
-      background: #050505;
-      color: white;
-      line-height: 1.5;
-    }
-
-    nav {
-      background: #0a0a0a;
-      border-bottom: 1px solid rgba(212,175,55,0.2);
-      text-align: center;
-      padding: 14px 10px;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 0 12px;
-      font-weight: 600;
-      font-size: 15px;
-    }
-
-    nav a:hover {
-      color: #d4af37;
-    }
-
-    header {
-      background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)),
-        url("images/cover.jpg") center/cover no-repeat;
-      min-height: 70vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 20px;
-      border-bottom: 2px solid #d4af37;
-    }
-
-    .hero-box {
-      max-width: 760px;
-      width: 100%;
-      background: rgba(0,0,0,0.45);
-      border: 1px solid rgba(212,175,55,0.35);
-      border-radius: 18px;
-      padding: 28px 20px;
-    }
-
-    .logo-mark {
-      font-size: 42px;
-      margin-bottom: 10px;
-    }
-
-    .brand {
-      font-size: 40px;
-      font-weight: 800;
-      color: #d4af37;
-      margin-bottom: 8px;
-    }
-
-    .subtitle {
-      color: #eee;
-      font-size: 18px;
-      margin-bottom: 14px;
-    }
-
-    .top-contact {
-      color: #ddd;
-      margin-bottom: 20px;
-      font-size: 16px;
-    }
-
-    .btn-main {
-      display: inline-block;
-      background: #d4af37;
-      color: black;
-      text-decoration: none;
-      padding: 12px 22px;
-      border-radius: 8px;
-      font-weight: bold;
-    }
-
-    section {
-      padding: 50px 16px;
-    }
-
-    .section-title {
-      text-align: center;
-      color: #d4af37;
-      font-size: 32px;
-      margin-bottom: 10px;
-    }
-
-    .section-text {
-      text-align: center;
-      color: #cfcfcf;
-      margin-bottom: 30px;
-    }
-
-    .cars {
-      max-width: 1200px;
-      margin: auto;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 20px;
-    }
-
-    .car {
-      background: #0d0d0d;
-      border: 1px solid rgba(255,255,255,0.05);
-      border-radius: 16px;
-      overflow: hidden;
-      box-shadow: 0 10px 22px rgba(0,0,0,0.3);
-    }
-
-    .car img {
-      width: 100%;
-      height: 200px;
-      object-fit: cover;
-      display: block;
-      background: #111;
-    }
-
-    .car-content {
-      padding: 16px;
-      text-align: center;
-    }
-
-    .car h3 {
-      font-size: 22px;
-      margin-bottom: 14px;
-      color: white;
-    }
-
-    .btn {
-      display: inline-block;
-      background: #d4af37;
-      color: black;
-      text-decoration: none;
-      padding: 10px 18px;
-      border-radius: 8px;
-      font-weight: bold;
-      border: none;
-      cursor: pointer;
-    }
-
-    .about,
-    .contact-box {
-      max-width: 950px;
-      margin: auto;
-      background: #0c0c0c;
-      border: 1px solid rgba(212,175,55,0.18);
-      border-radius: 18px;
-      padding: 28px 20px;
-      text-align: center;
-    }
-
-    .about p,
-    .contact-box p {
-      color: #d6d6d6;
-      margin-bottom: 12px;
-    }
-
-    .map-wrap {
-      max-width: 1100px;
-      margin: 30px auto 0;
-      border-radius: 16px;
-      overflow: hidden;
-      border: 1px solid rgba(212,175,55,0.18);
-    }
-
-    .map-wrap iframe {
-      width: 100%;
-      height: 300px;
-      border: 0;
-      display: block;
-    }
-
-    .whatsapp {
-      position: fixed;
-      right: 18px;
-      bottom: 18px;
-      width: 58px;
-      height: 58px;
-      border-radius: 50%;
-      background: #25D366;
-      color: white;
-      text-decoration: none;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 28px;
-      box-shadow: 0 8px 18px rgba(0,0,0,0.35);
-      z-index: 2000;
-    }
-
-    footer {
-      text-align: center;
-      color: #aaa;
-      padding: 24px 16px;
-      border-top: 1px solid rgba(212,175,55,0.12);
-      margin-top: 30px;
-    }
-
-    @media (max-width: 600px) {
-      .brand {
-        font-size: 30px;
-      }
-
-      .subtitle {
-        font-size: 16px;
-      }
-    }
-  </style>
-
-  <script>
-    function reserver(voiture) {
-      const message = "Bonjour, je veux réserver : " + voiture;
-      window.open("https://wa.me/212664781956?text=" + encodeURIComponent(message), "_blank");
-    }
-  </script>
-</head>
-<body>
-
-  <nav>
-    <a href="#accueil">Accueil</a>
-    <a href="#vehicules">Véhicules</a>
-    <a href="#apropos">À propos</a>
-    <a href="#contact">Contact</a>
-  </nav>
-
-  <header id="accueil">
-    <div class="hero-box">
-      <div class="logo-mark">🚘</div>
       <div class="brand">LAARF RENT CAR</div>
       <div class="subtitle">Location de véhicules premium au Maroc</div>
       <div class="top-contact">📍 Marrakech • 📞 0664781956</div>
@@ -823,9 +55,17 @@ images/clio5.jpg
 
   <section id="vehicules">
     <h2 class="section-title">Nos Véhicules</h2>
-    <p class="section-text">Sélection de véhicules disponibles</p>
+    <p class="section-text">Flotte disponible</p>
 
     <div class="cars">
+      <div class="car">
+        <img src="images/mercedes-classe-a.jpg" alt="Mercedes Classe A">
+        <div class="car-content">
+          <h3>Mercedes Classe A</h3>
+          <button class="btn" onclick="reserver('Mercedes Classe A')">Réserver</button>
+        </div>
+      </div>
+
       <div class="car">
         <img src="images/porsche-macan.jpg" alt="Porsche Macan">
         <div class="car-content">
@@ -843,10 +83,10 @@ images/clio5.jpg
       </div>
 
       <div class="car">
-        <img src="images/touareg.jpg" alt="Volkswagen Touareg">
+        <img src="images/clio5.jpg" alt="Renault Clio 5">
         <div class="car-content">
-          <h3>Volkswagen Touareg</h3>
-          <button class="btn" onclick="reserver('Volkswagen Touareg')">Réserver</button>
+          <h3>Renault Clio 5</h3>
+          <button class="btn" onclick="reserver('Renault Clio 5')">Réserver</button>
         </div>
       </div>
 
@@ -859,10 +99,18 @@ images/clio5.jpg
       </div>
 
       <div class="car">
-        <img src="images/audi-a3.jpg" alt="Audi A3">
+        <img src="images/cupra-leon.jpg" alt="Cupra Leon">
         <div class="car-content">
-          <h3>Audi A3</h3>
-          <button class="btn" onclick="reserver('Audi A3')">Réserver</button>
+          <h3>Cupra Leon</h3>
+          <button class="btn" onclick="reserver('Cupra Leon')">Réserver</button>
+        </div>
+      </div>
+
+      <div class="car">
+        <img src="images/touareg.jpg" alt="Volkswagen Touareg">
+        <div class="car-content">
+          <h3>Volkswagen Touareg</h3>
+          <button class="btn" onclick="reserver('Volkswagen Touareg')">Réserver</button>
         </div>
       </div>
 
@@ -873,31 +121,14 @@ images/clio5.jpg
           <button class="btn" onclick="reserver('Golf 8')">Réserver</button>
         </div>
       </div>
-
-      <div class="car">
-        <img src="images/clio5.jpg" alt="Renault Clio 5">
-        <div class="car-content">
-          <h3>Renault Clio 5</h3>
-          <button class="btn" onclick="reserver('Renault Clio 5')">Réserver</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="apropos">
-    <div class="about">
-      <h2 class="section-title">À propos</h2>
-      <p>LAARF RENT CAR vous propose une location simple, rapide et professionnelle.</p>
-      <p>Contact direct via WhatsApp pour réserver votre véhicule.</p>
     </div>
   </section>
 
   <section id="contact">
     <div class="contact-box">
       <h2 class="section-title">Contact</h2>
-      <p>📞 Téléphone : 0664781956</p>
-      <p>📍 Ville : Marrakech</p>
-      <p>Disponible tous les jours pour vos réservations.</p>
+      <p>📞 0664781956</p>
+      <p>📍 Marrakech</p>
       <a class="btn" href="https://wa.me/212664781956">Contacter maintenant</a>
     </div>
 
@@ -906,11 +137,10 @@ images/clio5.jpg
     </div>
   </section>
 
-  <a class="whatsapp" href="https://wa.me/212664781956" title="WhatsApp">💬</a>
+  <a class="whatsapp" href="https://wa.me/212664781956">💬</a>
 
   <footer>
-    © 2026 LAARF RENT CAR - Tous droits réservés
+    © 2026 LAARF RENT CAR
   </footer>
-
 </body>
 </html>
