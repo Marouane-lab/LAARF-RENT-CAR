@@ -15,62 +15,103 @@ body {
   color: white;
 }
 
-/* HEADER */
-header {
+/* LOGO */
+.logo {
   text-align: center;
-  padding: 40px 20px;
+  padding: 20px;
 }
-
-/* LOGO 3D */
-<div class="logo">
-  <img src="logo.png" alt="AOL Luxury Logo">
-</div>
+.logo img {
+  width: 100%;
+  max-height: 220px;
+  object-fit: cover;
 }
 
 /* HERO */
 .hero {
   text-align: center;
-  padding: 50px 20px;
+  padding: 30px;
 }
 
 .hero h1 {
-  font-size: 30px;
+  font-size: 28px;
 }
 
 .btn {
-  display: inline-block;
-  margin-top: 20px;
   padding: 12px 25px;
   background: gold;
   color: black;
   border-radius: 8px;
   text-decoration: none;
   font-weight: bold;
+  margin: 10px;
+  display: inline-block;
 }
 
-/* SECTIONS */
+/* VOITURES */
 .section {
-  padding: 50px 20px;
+  padding: 40px 20px;
   text-align: center;
 }
 
-.cards {
+.cars {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
 }
 
-.card {
+.car {
+  width: 260px;
   background: #1e293b;
-  padding: 20px;
   border-radius: 12px;
-  width: 250px;
+  overflow: hidden;
   transition: 0.3s;
 }
-
-.card:hover {
+.car:hover {
   transform: scale(1.05);
+}
+
+.car img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card {
+  padding: 15px;
+}
+
+/* FORM */
+form {
+  max-width: 400px;
+  margin: auto;
+}
+
+input, select, button {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+}
+
+button {
+  background: gold;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* WHATSAPP */
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  color: white;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 20px;
+  text-decoration: none;
 }
 
 /* FOOTER */
@@ -84,48 +125,117 @@ footer {
 
 <body>
 
-<header>
-  <div class="logo">AOL LUXURY & LAARF RENT CAR</div>
-  <p>Marrakech - Location de voitures premium</p>
-</header>
+<!-- LOGO -->
+<div class="logo">
+  <img src="logo.png" alt="AOL Luxury Logo">
+</div>
 
+<!-- HERO -->
 <section class="hero">
   <h1>Louez votre voiture de luxe à Marrakech 🚗</h1>
-  <p>Service rapide - Livraison disponible partout</p>
-  <a href="tel:06647819956" class="btn">📞 Réserver maintenant</a>
+  <a href="tel:06647819956" class="btn">📞 Appeler</a>
+  <a href="https://wa.me/212664781956" class="btn">💬 WhatsApp</a>
 </section>
 
+<!-- VOITURES -->
 <section class="section">
-  <h2>Nos Services</h2>
-  <div class="cards">
-    <div class="card">🚗 Voitures de luxe</div>
-    <div class="card">🚚 Livraison à domicile</div>
-    <div class="card">⏱️ Service rapide 24/7</div>
+  <h2>Nos voitures</h2>
+  <div class="cars">
+
+    <div class="car">
+      <img src="https://images.unsplash.com/photo-1619767886558-efdc259cde1a" alt="">
+      <div class="card">Porsche Macan</div>
+    </div>
+
+    <div class="car">
+      <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6" alt="">
+      <div class="card">Volkswagen Golf 8</div>
+    </div>
+
+    <div class="car">
+      <img src="https://images.unsplash.com/photo-1626668893632-6f3a4466d22f" alt="">
+      <div class="card">Volkswagen T-Roc</div>
+    </div>
+
+    <div class="car">
+      <img src="https://images.unsplash.com/photo-1605559424843-9e4c228bf1c2" alt="">
+      <div class="card">Touareg</div>
+    </div>
+
+    <div class="car">
+      <img src="https://images.unsplash.com/photo-1617814076367-b759c7d7e738" alt="">
+      <div class="card">Renault Clio 5</div>
+    </div>
+
+    <div class="car">
+      <img src="https://images.unsplash.com/photo-1583267746897-2cf415887172" alt="">
+      <div class="card">Mercedes Classe A</div>
+    </div>
+
+    <div class="car">
+      <img src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8" alt="">
+      <div class="card">Cupra Leon</div>
+    </div>
+
+    <div class="car">
+      <img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341" alt="">
+      <div class="card">Audi A3 S-Line</div>
+    </div>
+
   </div>
 </section>
 
+<!-- RÉSERVATION RAPIDE -->
 <section class="section">
-  <h2>Pourquoi nous choisir ?</h2>
-  <div class="cards">
-    <div class="card">⭐ Service professionnel</div>
-    <div class="card">💎 Véhicules haut de gamme</div>
-    <div class="card">📍 Basé à Marrakech</div>
-  </div>
+  <h2>Réservation rapide</h2>
+
+  <form onsubmit="sendWhatsApp(event)">
+    <input type="text" id="nom" placeholder="Votre nom" required>
+    <input type="date" id="date" required>
+
+    <select id="voiture">
+      <option>Porsche Macan</option>
+      <option>Golf 8</option>
+      <option>T-Roc</option>
+      <option>Touareg</option>
+      <option>Clio 5</option>
+      <option>Classe A</option>
+      <option>Cupra Leon</option>
+      <option>Audi A3 Sline</option>
+    </select>
+
+    <button type="submit">Réserver maintenant</button>
+  </form>
 </section>
 
+<!-- AVIS -->
 <section class="section">
   <h2>Avis clients</h2>
-  <div class="cards">
-    <div class="card">⭐⭐⭐⭐⭐<br>Service parfait !</div>
-    <div class="card">⭐⭐⭐⭐⭐<br>Voiture propre et rapide</div>
-    <div class="card">⭐⭐⭐⭐⭐<br>Je recommande !</div>
-  </div>
+  <p>⭐⭐⭐⭐⭐ Service excellent</p>
+  <p>⭐⭐⭐⭐⭐ Livraison rapide à Marrakech</p>
 </section>
 
 <footer>
   <p>📍 Marrakech | 📞 06647819956</p>
-  <p>© 2026 AOL LUXURY & LAARF RENT CAR</p>
+  <p>© AOL LUXURY & LAARF RENT CAR</p>
 </footer>
+
+<!-- WHATSAPP FLOAT -->
+<a class="whatsapp" href="https://wa.me/212664781956" target="_blank">💬</a>
+
+<script>
+function sendWhatsApp(e) {
+  e.preventDefault();
+
+  let nom = document.getElementById("nom").value;
+  let date = document.getElementById("date").value;
+  let voiture = document.getElementById("voiture").value;
+
+  let message = `Bonjour, je m'appelle ${nom}, je veux réserver ${voiture} pour le ${date}`;
+
+  window.open(`https://wa.me/212664781956?text=${encodeURIComponent(message)}`, '_blank');
+}
+</script>
 
 </body>
 </html>
